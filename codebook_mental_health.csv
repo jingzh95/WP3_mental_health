@@ -1,0 +1,43 @@
+Concept;Type;NCDM table;NCDM variable;NCDM value;Source table;Source variable;Source value;Notes
+Study population;;;;;;;;
+Cohort;cat;person;person_id;;SSB;PasientLopeNr_PDB2887;;
+pre-exisiting mental disorder;cat;"hospital
+diagnoses";"adm_date
+code_system
+code";;NPR;"inn_dato
+kodenavn
+kodeverdi";;
+Sosiodemographic characteristics;;;;;;;;
+Male;cat;person;sex;1;SSB;kjonn;1;1=M, 2=F
+Female;cat;person;sex;2;SSB;kjonn;2;
+Age;date;person;birth_year;;SSB;foedsel_datodiff;;
+Outcomes;;;;;;;;
+Mortality;date;death;death_date;;DAR;diff_dager;;
+Hospitalsiation;cat;hospital;adm_type;1;;omsorgsnivå;1,2,8;"1=hospitalised
+2=hospitalised not overnight
+8=radiation hospitalised"
+Outpatient;cat;hospital;adm_type;2;;omsorgsnivå;3;3=outpatient contact
+Exposures;;;;;;;;
+Incidence of dispensing;cat;drug;disp_date;;NorPD;diffdager_utlev_dato;;
+Incidence of  diagnoses;cat;hospital;hosp_id;;NPR;kobl_nøkkel;;to identify different encounters
+Medication groups;;;;;;;;
+Antidepressants;cat;drug;atc_code;N06A;NorPD;ATCkode;N06A;
+Antipsychotics;cat;drug;atc_code;N05A;NorPD;ATCkode;N05A;
+Anxiolytics;cat;drug;atc_code;N05B;NorPD;ATCkode;N05B;
+Hypnotics & sedatives;cat;drug;atc_code;N05C;NorPD;ATCkode;N05C;
+Lithium;cat;drug;atc_code;N05AN;NorPD;ATCkode;N05AN;
+Opioid analgesics;cat;drug;atc_code;N02A;NorPD;ATCkode;N02A;
+Psychostimulants;cat;drug;atc_code;N06B;NorPD;ATCkode;N06B;
+Hospital inpatient admissions;;;;;;;;
+Anxiety disorders;cat;diagnoses;code;F40,F41,F42,F43;NPR;kodeverdi;F40,F41,F42,F43;
+Bipolar diseases;cat;diagnoses;code;F31;NPR;kodeverdi;F31;
+Depressive & mood disorders;cat;diagnoses;code;F32,F33,F34,F38,F39;NPR;kodeverdi;F32,F33,F34,F38,F39;
+Eating disorders;cat;diagnoses;code;F50;NPR;kodeverdi;F50;
+Schizophrenia & delusional disorders;cat;diagnoses;code;F20,F22;NPR;kodeverdi;F20,F22;
+Specialist outpatient visits;;;;;;;;
+ADHD;cat;diagnoses;code;F40,F41,F42,F43;NPR;kodeverdi;F40,F41,F42,F43;
+Anxiety disorders;cat;diagnoses;code;F31;NPR;kodeverdi;F31;
+Bipolar diseases;cat;diagnoses;code;F32,F33,F34,F38,F39;NPR;kodeverdi;F32,F33,F34,F38,F39;
+Depressive & mood disorders;cat;diagnoses;code;F50;NPR;kodeverdi;F50;
+Eating disorders;cat;diagnoses;code;F20,F22;NPR;kodeverdi;F20,F22;
+Schizophrenia & delusional disorders;;diagnoses;code_system;ICD-10;NPR;kodenavn;F40,F41,F42,F43;
